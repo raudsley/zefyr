@@ -336,12 +336,8 @@ class AttributeTheme {
       case TargetPlatform.macOS:
         monospaceFontFamily = 'Menlo';
         break;
-      case TargetPlatform.android:
-      case TargetPlatform.fuchsia:
-        monospaceFontFamily = 'Roboto Mono';
-        break;
       default:
-        throw UnimplementedError('Platform ${theme.platform} not implemented.');
+        monospaceFontFamily = 'Roboto Mono';
     }
 
     return AttributeTheme(
